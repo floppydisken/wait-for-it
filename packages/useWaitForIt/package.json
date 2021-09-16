@@ -1,0 +1,30 @@
+{
+  "name": "use-wait-for-it",
+  "version": "1.0.0",
+  "description": "React hook for waitForIt",
+  "keywords": [
+    "react",
+    "hook",
+    "dom",
+    "wait",
+    "element",
+    "ref"
+  ],
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "author": "Bjarke Sporring",
+  "peerDependencies": {
+    "react": ">= 16.8.0"
+  },
+  "dependencies": {
+    "wait-for-it": "file:../waitForIt"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.21",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "rimraf dist/* && tsc"
+  }
+}
